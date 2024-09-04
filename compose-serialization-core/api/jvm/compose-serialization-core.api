@@ -1,3 +1,26 @@
+public final class com/mooncloak/kodetools/compose/serialization/AnnotatedStringRangeSerializer : kotlinx/serialization/KSerializer {
+	public static final field $stable I
+	public fun <init> (Lkotlinx/serialization/KSerializer;)V
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Landroidx/compose/ui/text/AnnotatedString$Range;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Landroidx/compose/ui/text/AnnotatedString$Range;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+}
+
+public final class com/mooncloak/kodetools/compose/serialization/AnnotatedStringSerializer : kotlinx/serialization/KSerializer {
+	public static final field $stable I
+	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/AnnotatedStringSerializer;
+	public fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Landroidx/compose/ui/text/AnnotatedString;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun hashCode ()I
+	public fun serialize (Lkotlinx/serialization/encoding/Encoder;Landroidx/compose/ui/text/AnnotatedString;)V
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun toString ()Ljava/lang/String;
+}
+
 public final class com/mooncloak/kodetools/compose/serialization/BaselineShiftAsStringSerializer : kotlinx/serialization/KSerializer {
 	public static final field $stable I
 	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/BaselineShiftAsStringSerializer;
@@ -49,6 +72,25 @@ public final class com/mooncloak/kodetools/compose/serialization/ColorAsArgbIntS
 	public static final fun argbIntSerializer (Landroidx/compose/ui/graphics/Color$Companion;)Lkotlinx/serialization/KSerializer;
 }
 
+public final class com/mooncloak/kodetools/compose/serialization/ColorAsArgbObjectSerializer : kotlinx/serialization/KSerializer {
+	public static final field $stable I
+	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/ColorAsArgbObjectSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-vNxB06k (Lkotlinx/serialization/encoding/Decoder;)J
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun hashCode ()I
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-4WTKRHQ (Lkotlinx/serialization/encoding/Encoder;J)V
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/compose/serialization/ColorAsObjectSerializerKt {
+	public static final fun argbObjectSerializer (Landroidx/compose/ui/graphics/Color$Companion;)Lkotlinx/serialization/KSerializer;
+	public static final fun rgbaObjectSerializer (Landroidx/compose/ui/graphics/Color$Companion;)Lkotlinx/serialization/KSerializer;
+	public static final fun uLongObjectSerializer (Landroidx/compose/ui/graphics/Color$Companion;)Lkotlinx/serialization/KSerializer;
+}
+
 public final class com/mooncloak/kodetools/compose/serialization/ColorAsRgbaComponentsSerializer : kotlinx/serialization/KSerializer {
 	public static final field $stable I
 	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/ColorAsRgbaComponentsSerializer;
@@ -64,6 +106,32 @@ public final class com/mooncloak/kodetools/compose/serialization/ColorAsRgbaComp
 
 public final class com/mooncloak/kodetools/compose/serialization/ColorAsRgbaComponentsSerializerKt {
 	public static final fun rgbaSerializer (Landroidx/compose/ui/graphics/Color$Companion;)Lkotlinx/serialization/KSerializer;
+}
+
+public final class com/mooncloak/kodetools/compose/serialization/ColorAsRgbaObjectSerializer : kotlinx/serialization/KSerializer {
+	public static final field $stable I
+	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/ColorAsRgbaObjectSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-vNxB06k (Lkotlinx/serialization/encoding/Decoder;)J
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun hashCode ()I
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-4WTKRHQ (Lkotlinx/serialization/encoding/Encoder;J)V
+	public fun toString ()Ljava/lang/String;
+}
+
+public final class com/mooncloak/kodetools/compose/serialization/ColorAsULongObjectSerializer : kotlinx/serialization/KSerializer {
+	public static final field $stable I
+	public static final field INSTANCE Lcom/mooncloak/kodetools/compose/serialization/ColorAsULongObjectSerializer;
+	public synthetic fun deserialize (Lkotlinx/serialization/encoding/Decoder;)Ljava/lang/Object;
+	public fun deserialize-vNxB06k (Lkotlinx/serialization/encoding/Decoder;)J
+	public fun equals (Ljava/lang/Object;)Z
+	public fun getDescriptor ()Lkotlinx/serialization/descriptors/SerialDescriptor;
+	public fun hashCode ()I
+	public synthetic fun serialize (Lkotlinx/serialization/encoding/Encoder;Ljava/lang/Object;)V
+	public fun serialize-4WTKRHQ (Lkotlinx/serialization/encoding/Encoder;J)V
+	public fun toString ()Ljava/lang/String;
 }
 
 public final class com/mooncloak/kodetools/compose/serialization/ColorAsULongSerializer : kotlinx/serialization/KSerializer {
