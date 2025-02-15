@@ -1,6 +1,6 @@
 plugins {
     `maven-publish`
-    signing
+    // FIXME: signing
 }
 
 version = rootProject.version
@@ -102,6 +102,7 @@ fun MavenPublication.mavenCentralPom() {
     }
 }
 
+/* FIXME: Signing
 signing {
     setRequired {
         findProperty("signing.keyId") != null
@@ -116,3 +117,4 @@ signing {
 project.tasks.withType(AbstractPublishToMaven::class.java).configureEach {
     dependsOn(project.tasks.withType(Sign::class.java))
 }
+*/
