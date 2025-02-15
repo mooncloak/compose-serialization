@@ -1,13 +1,13 @@
 plugins {
-    kotlin("jvm") version "2.0.0" apply false
-    kotlin("multiplatform") version "2.0.0" apply false
-    kotlin("android") version "2.0.0" apply false
-    kotlin("plugin.serialization") version "2.0.0" apply false
-    id("com.android.library") version "8.2.0" apply false
-    id("org.jetbrains.compose") version "1.6.11" apply false
-    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0" apply false
-    id("org.jetbrains.dokka") version "1.9.20"
-    id("org.jetbrains.kotlinx.binary-compatibility-validator") version "0.13.2"
+    kotlin("jvm") version "2.1.0" apply false
+    kotlin("multiplatform") version "2.1.0" apply false
+    kotlin("android") version "2.1.0" apply false
+    kotlin("plugin.serialization") version "2.1.0" apply false
+    id("com.android.library") version "8.2.2" apply false
+    id("org.jetbrains.kotlin.plugin.compose") version "2.1.0" apply false
+    id("org.jetbrains.compose") apply false
+    id("org.jetbrains.dokka")
+    id("org.jetbrains.kotlinx.binary-compatibility-validator")
     id("compose.variables")
 }
 
